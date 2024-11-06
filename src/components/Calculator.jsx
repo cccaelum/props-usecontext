@@ -9,7 +9,6 @@ const Calculator = () => {
 
  const handleClick= (number) => {
     addNumber(number)
-    sumNumbers(numbers)
  }
     return (
         <>
@@ -22,7 +21,7 @@ const Calculator = () => {
         </div>
         <button onClick={()=> resetNumbers()}>Reset</button>
         <p></p>
-        <Link to='/result'>Resultado</Link>
+        <Link to='/result' onClick={sumNumbers}>Resultado</Link>
         </>
 
     )
